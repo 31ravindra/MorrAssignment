@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		E048FA8F2574CB010020EE92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048FA8E2574CB010020EE92 /* AppDelegate.swift */; };
 		E048FA912574CB010020EE92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048FA902574CB010020EE92 /* SceneDelegate.swift */; };
-		E048FA932574CB010020EE92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048FA922574CB010020EE92 /* ViewController.swift */; };
 		E048FA962574CB010020EE92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E048FA942574CB010020EE92 /* Main.storyboard */; };
 		E048FA982574CB030020EE92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E048FA972574CB030020EE92 /* Assets.xcassets */; };
 		E048FA9B2574CB030020EE92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E048FA992574CB030020EE92 /* LaunchScreen.storyboard */; };
 		E048FAA62574CB030020EE92 /* MorrAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048FAA52574CB030020EE92 /* MorrAssignmentTests.swift */; };
 		E048FAB12574CB030020EE92 /* MorrAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048FAB02574CB030020EE92 /* MorrAssignmentUITests.swift */; };
+		E048FAC22574CDA50020EE92 /* CreditCardInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048FAC12574CDA50020EE92 /* CreditCardInputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		E048FA8B2574CB010020EE92 /* MorrAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorrAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E048FA8E2574CB010020EE92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E048FA902574CB010020EE92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E048FA922574CB010020EE92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E048FA952574CB010020EE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E048FA972574CB030020EE92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E048FA9A2574CB030020EE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		E048FAAC2574CB030020EE92 /* MorrAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorrAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E048FAB02574CB030020EE92 /* MorrAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorrAssignmentUITests.swift; sourceTree = "<group>"; };
 		E048FAB22574CB030020EE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E048FAC12574CDA50020EE92 /* CreditCardInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardInputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,9 @@
 		E048FA8D2574CB010020EE92 /* MorrAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				E048FA8E2574CB010020EE92 /* AppDelegate.swift */,
-				E048FA902574CB010020EE92 /* SceneDelegate.swift */,
-				E048FA922574CB010020EE92 /* ViewController.swift */,
-				E048FA942574CB010020EE92 /* Main.storyboard */,
+				E048FAC02574CB790020EE92 /* StoryBoards */,
+				E048FABF2574CB6C0020EE92 /* Common */,
+				E048FABE2574CB5B0020EE92 /* ViewControllers */,
 				E048FA972574CB030020EE92 /* Assets.xcassets */,
 				E048FA992574CB030020EE92 /* LaunchScreen.storyboard */,
 				E048FA9C2574CB030020EE92 /* Info.plist */,
@@ -126,6 +125,31 @@
 				E048FAB22574CB030020EE92 /* Info.plist */,
 			);
 			path = MorrAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		E048FABE2574CB5B0020EE92 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E048FAC12574CDA50020EE92 /* CreditCardInputViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E048FABF2574CB6C0020EE92 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E048FA8E2574CB010020EE92 /* AppDelegate.swift */,
+				E048FA902574CB010020EE92 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E048FAC02574CB790020EE92 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				E048FA942574CB010020EE92 /* Main.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E048FA932574CB010020EE92 /* ViewController.swift in Sources */,
 				E048FA8F2574CB010020EE92 /* AppDelegate.swift in Sources */,
+				E048FAC22574CDA50020EE92 /* CreditCardInputViewController.swift in Sources */,
 				E048FA912574CB010020EE92 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RBC3ZW7CHU;
 				INFOPLIST_FILE = MorrAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RBC3ZW7CHU;
 				INFOPLIST_FILE = MorrAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

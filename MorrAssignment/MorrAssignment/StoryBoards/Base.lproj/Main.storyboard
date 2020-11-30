@@ -14,10 +14,97 @@
                     <view key="view" contentMode="scaleToFill" id="Qpe-D0-pzS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euQ-3R-oPm" customClass="CustomOutlinedTxtField" customModule="MorrAssignment" customModuleProvider="target">
+                                <rect key="frame" x="20" y="113" width="374" height="70"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="pHi-wq-tU6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Card Number"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfb-b4-jRT" customClass="CustomOutlinedTxtField" customModule="MorrAssignment" customModuleProvider="target">
+                                <rect key="frame" x="20" y="223" width="177" height="70"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="hhh-Li-XbP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="MM/YY"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyP-mO-cQc" customClass="CustomOutlinedTxtField" customModule="MorrAssignment" customModuleProvider="target">
+                                <rect key="frame" x="217" y="223" width="177" height="70"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Xsc-YI-Rap"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Security Code"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0c-7L-CSb" customClass="CustomOutlinedTxtField" customModule="MorrAssignment" customModuleProvider="target">
+                                <rect key="frame" x="20" y="333" width="177" height="70"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="oOo-uK-Oyv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="First Name"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0T-Ep-AFA" customClass="CustomOutlinedTxtField" customModule="MorrAssignment" customModuleProvider="target">
+                                <rect key="frame" x="217" y="333" width="177" height="70"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Last Name"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2j-PE-p86">
+                                <rect key="frame" x="20" y="453" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Wsv-mM-Qdb"/>
+                                </constraints>
+                                <state key="normal" title="Submit Payment">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSubmitClick:" destination="EfA-Oa-Yn6" eventType="touchUpInside" id="qmt-5H-VrN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tyP-mO-cQc" firstAttribute="leading" secondItem="Pfb-b4-jRT" secondAttribute="trailing" constant="20" id="3sC-A2-YRS"/>
+                            <constraint firstItem="T0c-7L-CSb" firstAttribute="trailing" secondItem="Pfb-b4-jRT" secondAttribute="trailing" id="7Vd-m4-IkZ"/>
+                            <constraint firstItem="Pfb-b4-jRT" firstAttribute="leading" secondItem="euQ-3R-oPm" secondAttribute="leading" id="AIy-9v-zHf"/>
+                            <constraint firstItem="vUa-ch-eg8" firstAttribute="trailing" secondItem="P2j-PE-p86" secondAttribute="trailing" constant="20" id="D5m-41-HoO"/>
+                            <constraint firstItem="T0c-7L-CSb" firstAttribute="top" secondItem="Pfb-b4-jRT" secondAttribute="bottom" constant="40" id="DqW-iw-shF"/>
+                            <constraint firstItem="T0c-7L-CSb" firstAttribute="width" secondItem="j0T-Ep-AFA" secondAttribute="width" id="EoE-GR-0Ap"/>
+                            <constraint firstItem="vUa-ch-eg8" firstAttribute="trailing" secondItem="euQ-3R-oPm" secondAttribute="trailing" constant="20" id="Fa9-CV-TAc"/>
+                            <constraint firstItem="P2j-PE-p86" firstAttribute="top" secondItem="T0c-7L-CSb" secondAttribute="bottom" constant="50" id="HjU-ZQ-6L3"/>
+                            <constraint firstItem="tyP-mO-cQc" firstAttribute="top" secondItem="euQ-3R-oPm" secondAttribute="bottom" constant="40" id="PVg-xY-N9a"/>
+                            <constraint firstItem="j0T-Ep-AFA" firstAttribute="bottom" secondItem="T0c-7L-CSb" secondAttribute="bottom" id="YBl-mN-J5q"/>
+                            <constraint firstItem="tyP-mO-cQc" firstAttribute="trailing" secondItem="euQ-3R-oPm" secondAttribute="trailing" id="aun-t5-6zD"/>
+                            <constraint firstItem="Pfb-b4-jRT" firstAttribute="top" secondItem="euQ-3R-oPm" secondAttribute="bottom" constant="40" id="cf7-k2-lkj"/>
+                            <constraint firstItem="P2j-PE-p86" firstAttribute="leading" secondItem="vUa-ch-eg8" secondAttribute="leading" constant="20" id="gxQ-JH-BcI"/>
+                            <constraint firstItem="T0c-7L-CSb" firstAttribute="leading" secondItem="Pfb-b4-jRT" secondAttribute="leading" id="hpx-nw-nGj"/>
+                            <constraint firstItem="j0T-Ep-AFA" firstAttribute="leading" secondItem="tyP-mO-cQc" secondAttribute="leading" id="l1l-bs-aID"/>
+                            <constraint firstItem="euQ-3R-oPm" firstAttribute="leading" secondItem="vUa-ch-eg8" secondAttribute="leading" constant="20" id="lLp-SE-9t0"/>
+                            <constraint firstItem="j0T-Ep-AFA" firstAttribute="top" secondItem="tyP-mO-cQc" secondAttribute="bottom" constant="40" id="mti-hB-rlI"/>
+                            <constraint firstItem="j0T-Ep-AFA" firstAttribute="trailing" secondItem="tyP-mO-cQc" secondAttribute="trailing" id="nVP-U0-qUo"/>
+                            <constraint firstItem="euQ-3R-oPm" firstAttribute="top" secondItem="vUa-ch-eg8" secondAttribute="top" constant="25" id="w7E-ef-lSG"/>
+                            <constraint firstItem="Pfb-b4-jRT" firstAttribute="width" secondItem="tyP-mO-cQc" secondAttribute="width" id="xSY-8k-j9M"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vUa-ch-eg8"/>
                     </view>
                     <navigationItem key="navigationItem" id="nNA-fo-M0s"/>
+                    <connections>
+                        <outlet property="customCardNumberTxtField" destination="euQ-3R-oPm" id="3bV-R2-r6M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zUv-KB-vlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

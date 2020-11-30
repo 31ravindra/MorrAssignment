@@ -1,0 +1,6 @@
+framework module Pods_MorrAssignment_MorrAssignmentUITests {
+  umbrella header "Pods-MorrAssignment-MorrAssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

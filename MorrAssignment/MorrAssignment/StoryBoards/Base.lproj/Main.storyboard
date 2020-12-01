@@ -76,7 +76,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tyP-mO-cQc" firstAttribute="leading" secondItem="Pfb-b4-jRT" secondAttribute="trailing" constant="20" id="3sC-A2-YRS"/>
                             <constraint firstItem="T0c-7L-CSb" firstAttribute="trailing" secondItem="Pfb-b4-jRT" secondAttribute="trailing" id="7Vd-m4-IkZ"/>
@@ -104,6 +104,10 @@
                     <navigationItem key="navigationItem" id="nNA-fo-M0s"/>
                     <connections>
                         <outlet property="customCardNumberTxtField" destination="euQ-3R-oPm" id="3bV-R2-r6M"/>
+                        <outlet property="cvvTxtField" destination="tyP-mO-cQc" id="saK-8Y-SjO"/>
+                        <outlet property="dateTxtField" destination="Pfb-b4-jRT" id="mFR-Uu-wSy"/>
+                        <outlet property="firstNameTxtField" destination="T0c-7L-CSb" id="V9g-1l-pYh"/>
+                        <outlet property="lastNameTxtField" destination="j0T-Ep-AFA" id="ZEs-7a-KjW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zUv-KB-vlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -14,12 +14,12 @@ import MaterialComponents
 
 class CustomOutlinedTxtField: UIView {
 
-private var textFieldControllerFloating: MDCTextInputControllerOutlined!
+var textFieldControllerFloating: MDCTextInputControllerOutlined!
 var textField: MDCTextField!
 
 @IBInspectable var placeHolder: String!
 @IBInspectable var value: String!
-@IBInspectable var primaryColor: UIColor! = .purple
+@IBInspectable var primaryColor: UIColor! = .green
 
 override open func draw(_ rect: CGRect) {
     super.draw(rect)
@@ -44,6 +44,8 @@ func setUpProperty() {
 
     textFieldControllerFloating.activeColor = primaryColor
     textFieldControllerFloating.floatingPlaceholderActiveColor = primaryColor
+    textFieldControllerFloating.floatingPlaceholderErrorActiveColor = UIColor.red
+
     textFieldControllerFloating.normalColor = UIColor.lightGray
     textFieldControllerFloating.inlinePlaceholderColor = UIColor.lightGray
 

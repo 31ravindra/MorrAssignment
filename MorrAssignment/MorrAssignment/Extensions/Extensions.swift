@@ -21,9 +21,9 @@ extension String {
         let set = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLKMNOPQRSTUVWXYZ ")
         
         if(self.rangeOfCharacter(from: set.inverted) != nil ){
-              return false
+            return false
         } else {
-              return true
+            return true
         }
     }
 }

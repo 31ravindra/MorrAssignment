@@ -54,11 +54,11 @@ class CreditCardInputViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(
             target: self,
             action: #selector(CreditCardInputViewController.dismissKeyboard))
-
+        
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-
+    
     @objc func dismissKeyboard()
     {
         view.endEditing(true)
@@ -166,18 +166,18 @@ class CreditCardInputViewController: UIViewController {
     
     func showSuccessAlert() {
         let alertController = UIAlertController(title: "", message: "Payment Successful", preferredStyle: .alert)
-                
-                let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
-                    
-                    // Code in this block will trigger when OK button tapped.
-                   // print("Ok button tapped");
-                   // self.view.endEditing(true)
-                    
-                }
-                
-                alertController.addAction(OKAction)
-                
-                self.present(alertController, animated: true, completion:nil)
+        
+        let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
+            
+            // Code in this block will trigger when OK button tapped.
+            // print("Ok button tapped");
+            // self.view.endEditing(true)
+            
+        }
+        
+        alertController.addAction(OKAction)
+        
+        self.present(alertController, animated: true, completion:nil)
     }
     
     @IBAction func btnSubmitClick(_ sender: Any) {
@@ -232,7 +232,7 @@ class CreditCardInputViewController: UIViewController {
             self.view.endEditing(true)
         }
         
-       
+        
     }
     
     

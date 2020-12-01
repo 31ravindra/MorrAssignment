@@ -149,6 +149,27 @@ class CreditCardInputViewController: UIViewController {
     }
     
     
+    func validCardDate(dateStr: String) -> Bool{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/yy"
+        if !dateStr.contains("/") {
+            return false
+        } else {
+            let enteredDate = dateFormatter.date(from: dateStr)!
+            let endOfMonth = Calendar.current.date(byAdding: .month, value: 1, to: enteredDate)!
+            let now = Date()
+            if (endOfMonth < now) {
+                return false
+                //print("Expired - \(enteredDate) - \(endOfMonth)")
+            } else {
+                // valid
+                return true
+                // print("valid - now: \(now) entered: \(enteredDate)")
+            }
+        }
+        
+    }
+    
     func changeTxtFieldBorderForError(txtFiled: CustomOutlinedTxtField) {
         txtFiled.textFieldControllerFloating.normalColor = UIColor.red
         txtFiled.textFieldControllerFloating.floatingPlaceholderActiveColor  = UIColor.red
@@ -224,6 +245,14 @@ class CreditCardInputViewController: UIViewController {
         }else {
             flag = false
             changeTxtFieldBorderForError(txtFiled: lastNameTxtField)
+        }
+        
+        let dateStr = dateTxtField.textField.text ?? ""
+        if validCardDate(dateStr: dateStr) {
+            changeTxtFiledBorderForMatch(txtFiled: dateTxtField)
+        }else{
+            flag = false
+            changeTxtFieldBorderForError(txtFiled: dateTxtField)
         }
         
         if flag {
